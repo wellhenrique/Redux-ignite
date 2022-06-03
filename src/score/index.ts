@@ -1,11 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
+import rootReducer from "./modules/rootReducer";
 
 export const store = configureStore({
-  reducer: {
-    userState: () => ({
-      id: 1,
-      name: "Joao da penha",
-      email: "joao@email.com.br",
-    }),
-  },
+  reducer: rootReducer,
 });
